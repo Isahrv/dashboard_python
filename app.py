@@ -99,8 +99,6 @@ def plot_achat_semaine(data):
     return fig
 
 #================= Interface graphique ================#
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
-
 dropdown_options_ville = [{'label': loc, 'value': loc} for loc in df['city'].unique()]
 dropdown_options_sexe = [{'label': loc, 'value': loc} for loc in df['gender'].unique()]
 
